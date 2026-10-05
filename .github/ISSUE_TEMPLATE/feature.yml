@@ -1,0 +1,16 @@
+name: Feature request
+description: Something Wayseer Desktop should do.
+labels: [feature]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What you're trying to do
+      description: The task or question, rather than a solution. What do you do today instead?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+      description: How you picture it working, if you have an idea.

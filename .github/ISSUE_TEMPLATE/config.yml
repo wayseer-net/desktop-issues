@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security problem
+    url: https://github.com/wayseer-net/desktop-issues/security/advisories/new
+    about: Report it privately, never in a public issue.
+  - name: Licenses, purchases and refunds
+    url: mailto:hello@wayseer.net
+    about: Questions about a key or a payment go by email, so your details stay private.
+  - name: The user guide
+    url: https://wayseer.app/install
+    about: Installing, keys and getting started.

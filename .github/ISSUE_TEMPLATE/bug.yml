@@ -1,0 +1,54 @@
+name: Bug report
+description: Something in Wayseer Desktop doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues are public. Remove your hostnames, addresses, credentials and license key from
+        anything you paste. Security problems go in a [private report](https://github.com/wayseer-net/desktop-issues/security/advisories/new).
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The output of `wayseer --version`.
+      placeholder: wayseer 0.27.1, built 2026-10-05
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: Download
+      options:
+        - Linux AppImage
+        - Linux tarball
+        - macOS zip
+        - Windows zip
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system
+      placeholder: Ubuntu 24.04, macOS 15.3, Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you saw and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen
+      description: Steps from starting the app, if you know them. Does it happen with the demo world (`wayseer --config demo/config.yaml`)?
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Anything the app printed in the terminal, with private details removed.
+      render: text

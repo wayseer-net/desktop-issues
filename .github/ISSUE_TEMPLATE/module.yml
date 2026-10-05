@@ -1,0 +1,23 @@
+name: Module request
+description: A system or data source Wayseer Desktop should read.
+labels: [module]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: System or data source
+      placeholder: Grafana Loki, VMware vSphere, AWS
+    validations:
+      required: true
+  - type: textarea
+    id: want
+    attributes:
+      label: What you'd want to see from it
+      description: Which things, relationships, metrics or events matter to you.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Its API or docs
+      description: A link, if you have one.
