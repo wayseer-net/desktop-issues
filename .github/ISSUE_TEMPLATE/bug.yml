@@ -12,7 +12,7 @@ body:
     attributes:
       label: Version
       description: The output of `wayseer --version`.
-      placeholder: wayseer 0.27.1, built 2026-10-05
+      placeholder: wayseer 0.27.2, built 2026-10-06
     validations:
       required: true
   - type: dropdown
@@ -22,7 +22,10 @@ body:
       options:
         - Linux AppImage
         - Linux tarball
+        - Linux Flatpak
+        - Nix package
         - macOS zip
+        - Windows installer (MSI)
         - Windows zip
         - Other
     validations:
