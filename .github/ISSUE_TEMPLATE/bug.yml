@@ -48,7 +48,7 @@ body:
     id: steps
     attributes:
       label: How to make it happen
-      description: Steps from starting the app, if you know them. Does it happen with the demo world (`wayseer --config demo/config.yaml`)?
+      description: Steps from starting the app, if you know them. Does it happen with the demo world (`wayseer --demo`, from 0.28.1)?
   - type: textarea
     id: output
     attributes:
